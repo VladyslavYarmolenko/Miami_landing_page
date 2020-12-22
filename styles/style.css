@@ -6,9 +6,6 @@ body, ul, li, a, p, img {
   box-sizing: border-box;
 }
 
-body {
-  width: 1520px;
-}
 /* HOME */
 
 .home {
@@ -62,9 +59,9 @@ body {
 
 .home__bottom {
   width: 900px;
-  position: absolute;
-  bottom: 35px;
-  right: 160px;
+  position: relative;
+  top: 620px;
+  left: 285px;
 }
 
 .home__nav{
