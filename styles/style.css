@@ -1,0 +1,374 @@
+body, ul, li, a, p, img {
+  margin: 0;
+  padding: 0;
+  font-family: Ubuntu;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1520px;
+}
+/* HOME */
+
+.home {
+  height: 650px;
+  background-image: url(../images/miami-panorama.jpg);
+  background-size: 100% 100%;
+  padding: 35px 160px;
+}
+
+
+/* home__top */
+.home__top {
+ display: flex;
+ justify-content: space-between;
+ position: relative;
+
+ align-content: flex-start;
+}
+
+.logo {
+  width: 115px;
+  height: 76px;
+}
+
+.header__logo {
+  position: absolute;
+  left: 43%;
+}
+
+.home__contacts {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+
+  position: absolute;
+  right: 0;
+  top: 40px;
+
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+.text {
+  text-transform: uppercase;
+  border-bottom: 2px dashed #FFFFFF;
+}
+
+/* home_bottom */
+
+.home__bottom {
+  width: 900px;
+  position: absolute;
+  bottom: 35px;
+  right: 160px;
+}
+
+.home__nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home__nav  li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.home__nav  li  a {
+  text-decoration: none;
+  color: #FFFFFF;
+  text-transform: uppercase;
+
+  transition: background-color .1s linear ;
+}
+
+.home__nav  li a:hover {
+  background-color: #D5C5AA;
+  border: 2px solid #D5C5AA;
+  border-radius: 10px;
+}
+
+/* ABOUT US */
+
+.about {
+  width: 100%;
+  height: 765px;
+  padding: 160px;
+  background-color: #F2F2F2;
+  box-sizing: border-box;
+
+  display: flex;
+}
+
+.about__title {
+  text-transform: uppercase;
+  font-size: 48px;
+  width: 40%;
+}
+
+.link {
+  text-decoration: none;
+  color: #00AAEF;
+  cursor: pointer;
+}
+
+
+.about__info {
+  width: 60%;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+/* GALLERY */
+
+.gallery {
+  width: 100%;
+  height: 1300px;
+
+  padding: 110px 160px;
+  box-sizing: border-box;
+
+  background-color: #EEEEEE;
+
+}
+
+.section_title {
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 200;
+  text-transform: uppercase;
+  border-bottom: 2px solid #00AAEF;
+  width: fit-content;
+}
+
+.gallery_title {
+  position: relative;
+  bottom: 133px;
+  left: 500px;
+}
+
+.galery__images {
+  width: 100%;
+  overflow: hidden;
+}
+.galery__images img {
+  height: 260px;
+  display: block;
+}
+
+.marina_palms,
+.edition_residens,
+.faena_house {
+  width: 100%;
+  display: flex;
+}
+
+.small_img {
+  width: 34%;
+}
+
+.large_img {
+  width: 64%;
+}
+
+.medium_img {
+  width: 49%;
+}
+
+.right_img {
+  margin-left: 22px;
+}
+
+.galery__images p {
+  margin: 12px 0 35px 0;
+}
+
+.adress_link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #00AAEF;
+}
+
+.button_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.content_button {
+  background-color: #00AAEF;
+  border: none;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  border-radius: 5%;
+
+  transition: background-color .1s linear;
+  cursor: pointer;
+}
+
+.content_button:hover {
+  background-color: aqua;
+}
+
+.gallery__button {
+  width: 188px;
+  height: 52px;
+}
+
+
+
+/* CONSULTATION */
+
+.consultation {
+  background-color: #F2F2F2;
+  width: 100%;
+  padding: 160px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.consultation__title {
+  position: absolute;
+  top: 2760px;
+  left: 580px;
+}
+
+.consultation__main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.consultation__info_title {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.consultation__info_text {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.consultation__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form_input {
+  background-color:rgb(208, 209, 236);
+  border: none;
+  border-radius: 5%;
+  color: black;
+}
+
+.form_input, 
+.consultation__form_button {
+  width: 385px;
+  height: 54px;
+  margin-top: 10px;
+}
+
+/*TESTIMONIALS*/
+
+.testimonials {
+  height: 750px;
+  background-color: #EEEEEE;
+  padding: 80px 270px;
+  box-sizing: border-box;
+}
+
+.testimonials__title {
+  position: relative;
+  bottom: 105px;
+  left: 300px;
+}
+
+.testimonials__main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.person img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.person_name {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 7px 0;
+}
+
+.person_position {
+  font-style: italic;
+  color: rgb(72, 72, 73);
+  margin-bottom: 13px;
+}
+
+.person__info {
+  font-weight: 300;
+}
+
+
+/* CONTACT US */
+
+.contacts {
+  width: 100%;
+  background-color:  #F2F2F2;
+  padding: 120px 170px 70px;
+  box-sizing: border-box;
+}
+
+.contacts__title {
+  position: relative;
+  bottom: 145px;
+  left: 450px;
+}
+
+.contacts__main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__info {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+
+.contacts__form {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form_message {
+  height: 170px;
+}
+
+/* FOOTER */
+
+.footer {
+  background-image: url(../images/miami_bottom.jpg);
+  height: 650px;
+  background-size: 100% 100%;
+}
+
+.footer__logo {
+  display: block;
+  margin: 0 auto;
+  
+  position: relative;
+  top: 470px;
+}
